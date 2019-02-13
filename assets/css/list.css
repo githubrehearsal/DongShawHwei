@@ -1,0 +1,320 @@
+/* -------------------------------------------------------------
+ Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+ By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+ List of CSS3 Sass Mixins File to be @imported and @included as you need
+ The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+ ENDING css files
+ note: All CSS3 Properties are being supported by Safari 5
+ more info: http://www.findmebyip.com/litmus/#css3-properties
+ ------------------------------------------------------------- */
+/**Media Queries****************************************************/
+/**'min width:' values**/
+/**
+ *
+ * Media Query Mixins
+ *
+ */
+/*Grid Listing like in Upcoming Events section (code is based on upcoming events template)*/
+/**
+ *
+ * Creates a container with the given aspect ratio. If you place a .content inside
+ * the container, It will cover the entire container. Note: the container's width
+ * is set to 100%. Overide if necessary.
+ *
+ */
+/**
+ * Background image styling
+ */
+/**
+ * Overlay content. Pass optional background color for overlay.
+ *
+ * Usage:
+ *     .parent
+ *         .overlay
+ *             .content
+ */
+body {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  -moz-animation-name: fadeInTwo;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-name: fadeInTwo;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fadeInTwo;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+.header {
+  width: 100%;
+  padding: 130px 0 100px 0;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -moz-animation-name: fadeInThree;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 0.7s;
+  -webkit-animation-name: fadeInThree;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.7s;
+  animation-name: fadeInThree;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.7s;
+}
+
+.info-wrapper p {
+	color: #333;
+}
+
+.title-wrapper p {
+	color: #333;
+}
+
+
+
+@media (max-width: 991px) {
+  .header {
+    padding: 50px 0 60px 0;
+  }
+}
+.header .heading-circle {
+  width: 231px;
+  height: 231px;
+  display: table;
+  margin: 0 auto;
+  background: #151515;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.header .heading-circle .heading {
+  display: table-cell;
+  vertical-align: middle;
+  color: #eae1bb;
+  letter-spacing: 4px;
+  font-size: 23px;
+  line-height: 130%;
+}
+@media (max-width: 991px) {
+  .header .heading-circle .heading {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .header .heading-circle {
+    width: 200px;
+    height: 200px;
+  }
+}
+section.listing-container {
+  -moz-animation-name: fadeInTwo;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-name: fadeInTwo;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fadeInTwo;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000',GradientType=1);
+  width: 100%;
+}
+section.listing-container table {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+}
+section.listing-container table tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.6);
+}
+section.listing-container table tr td.title-wrapper {
+  padding: 50px;
+  font-size: 27px;
+}
+@media (max-width: 991px) {
+  section.listing-container table tr td.title-wrapper {
+    padding: 30px;
+    font-size: 18px;
+  }
+}
+section.listing-container table tr td.info-wrapper {
+  text-align: right;
+  padding-right: 30px;
+  border-right: solid 1px #ddd;
+}
+@media (max-width: 991px) {
+  section.listing-container table tr td.info-wrapper {
+    padding-right: 15px;
+    font-size: 12px;
+  }
+}
+/*Styling Specific to Exhibitions History*/
+body.page-id-95 {
+  background-image: url('../img/listings/exhibitions-bg.jpg');
+}
+/*Styling Specific to Honors and Awards*/
+body.page-id-99 {
+  background-image: url('../../img/listings/honors-bg.jpg');
+}
+body.page-id-99 td.title-wrapper {
+  padding: 50px;
+  font-size: 18px !important;
+  letter-spacing: 1px;
+  line-height: 165%;
+}
+body.page-id-99 td.title-wrapper p {
+  margin: 30px 0;
+  display: list-item;
+}
+@media (max-width: 991px) {
+  body.page-id-99 td.title-wrapper p {
+    font-size: 14px;
+  }
+}
+body.page-id-99 td.info-wrapper {
+  text-align: right;
+  padding-right: 30px;
+  border-right: solid 1px #454545;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #d6d6d6;
+}
+body.page-id-4137 td.title-wrapper {
+  padding: 50px;
+  font-size: 18px !important;
+  letter-spacing: 1px;
+  line-height: 165%;
+}
+body.page-id-4137 td.title-wrapper p {
+  margin: 30px 0;
+}
+@media (max-width: 991px) {
+  body.page-id-4137 td.title-wrapper p {
+    font-size: 14px;
+  }
+}
+body.page-id-4137 td.info-wrapper {
+  text-align: right;
+  padding-right: 30px;
+  border-right: solid 1px #454545;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #d6d6d6;
+}
+@-moz-keyframes fadeInOne {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInOne {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInOne {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeInTwo {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInTwo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInTwo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeInThree {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInThree {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInThree {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

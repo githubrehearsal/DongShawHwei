@@ -1,0 +1,187 @@
+	body {
+		font-family: 'Noto Sans TC', 'Open Sans', sans-serif, 'cwTeXFangSong';
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'Noto Sans TC', 'Open Sans', sans-serif, 'cwTeXFangSong';
+		font-weight: 300;
+		color: #747474;
+		margin: 0 0 10px;
+		text-transform: capitalize;
+	}
+	
+	h4.float_R {
+		color: #000;
+		text-align: right;
+		margin-bottom: 10px;
+	}
+
+	h5.float_R {
+		color: #555;
+		text-align: right;
+		line-height: 1.5em;
+	} 
+
+	.section-padding2 {
+		padding: 60px 0;
+	}
+	
+	.fig {
+		font-family: 'Noto Sans TC', 'Open Sans', sans-serif, 'cwTeXFangSong';
+		color: #555;
+		font-size: 12px;
+		text-align: left;
+		margin-top: 10px;
+	}
+
+	/*
+	.dropdown ul li a {
+		font-size: 55px;
+		position: relative;
+		padding-left: 2px;
+		float: right;
+		top: -2px;
+	}*/
+
+	.LPbox {
+		padding:5%;
+		margin: auto 20px;
+		width:60%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	.LPbox h1,h2 {
+		color: #fff;
+	}
+
+	.header {
+		background: #edf1f5 none repeat scroll 0 0;
+		background-image: url("../img/banner/bg01.jpg");
+		background-repeat: no-repeat;
+	}
+
+	/*fontaws*/
+	.fas{
+		padding-left:10px;
+	}
+
+	/*主選單項目---*/
+	.mainmenu li a{
+		font-size: 16px;
+		letter-spacing: 2px;
+		font-weight: 500;
+		font-family: 'Noto Sans TC', 'Open Sans', sans-serif, 'cwTeXFangSong';
+	}
+
+	/*主選單字體hover效果*/
+	.portfolio-menu.hover-1 li:after, .menu-hover-1 li a:after{
+		top:75px;
+	}
+
+	/*次選單區塊長度*/
+	.mainmenu .sub-menu, .mainmenu .navigation > li > ul{
+		width:200px;
+	}
+
+	/*次選單項目*/
+	.mainmenu .navigation > li > ul li a{ 
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 24px !important;
+	}
+
+	/*首頁---*/
+
+	/*banner*/
+	.ptb-275{
+		padding-top:175px;
+		padding-bottom:175px;
+	}
+
+	/*標題*/
+	.title-l{
+		font-size: 48px;
+		letter-spacing: 8px;
+	}	
+	.title-m{
+		font-size: 16px;
+		letter-spacing: 3px;
+		line-height: 28px;
+	}
+
+	/*漢堡選單*/
+	.navbar-toggle{
+		right:0px;
+	}
+
+	/*手機&平板選單*/
+	.mainmenu .navbar-collapse{
+		height: auto;
+	}
+
+	/*內層選單*/
+	.header-style-1 .mainmenu .navigation > li > ul li a{
+		line-height: 20px;
+	}
+
+	/*按鈕*/
+	.btn-area{
+		margin:7.5% 0;
+	}
+	.btn{
+		height: auto;
+		font-size: 16px;
+		color:rgb(80, 80, 80);
+		border-color: rgb(80, 80, 80);
+	}
+	.btn-fas{
+		transition: transform 0.1s 0s;
+	}
+
+	.btn:hover{
+		background-color: rgb(80, 80, 80);
+		color: rgb(245, 245, 245);
+	}
+
+	.btn:hover .btn-fas{
+		transform: translateX(10px);
+	}
+	
+	/*作品種類內頁*/
+	.page-title-area > h1{
+		color:rgb(245, 245, 245);
+	}
+	.page-title-area > h4{
+		color:rgb(245, 245, 245);
+	}
+	/*生平年表---*/
+	/*項目區塊*/
+	section.listing-container{
+		background:none !important;
+	}
+	/*項目清單*/
+	section.listing-container table tr td.title-wrapper{
+		padding:25px !important;
+	}
+	/*媒體報導---*/
+	/*區塊間距*/
+	.section-padding{
+		padding:40px 0;
+	}
+
+	@media only screen and (max-width: 480px) {
+		.LPbox{
+			width:100%;
+			margin:0;
+		}
+		.title-l{
+			font-size: 24px;
+			line-height: 36px;
+		}
+	}
+		
