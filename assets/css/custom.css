@@ -110,6 +110,11 @@
 		padding-bottom:175px;
 	}
 
+	/*個項目標題區塊*/
+	.project-title{
+		border:1px solid rgb(245, 245 ,245) !important;	
+	}
+
 	/*標題*/
 	.title-l{
 		font-size: 48px;
