@@ -8941,24 +8941,7 @@
    .text-xl-center {
 	 text-align: center !important;
    }
-   /*作品集排版*/
-   /*
-   #main-picture-container{
-	 display:flex;
-	 flex-wrap:wrap;
-   }
-   #main-picture-container > div:first-child{
-	 width:100%;
-   }
-   #theImage{
-	 margin-left:auto;
-   }
-   #theImageComment{
-	 width:300px;
-	 margin-right:auto;
-	 align-self:center;
-   }
-   */
+
  }
  
  @media (min-width: 1680px) {
@@ -9384,31 +9367,12 @@
    display:inline-block;
  }
  
- /*董小惠版權宣告*/
- #wrapper{
-   position: relative;
- }
- #wrapper::after{
-   width:100%;
-   content:'Copyright © 2019 Dong Shaw Hwei 保留一切權利';
-   position: absolute;
-   right:0;
-   bottom:-14px;
-   left:0;
-   padding:10px 10%;
-   z-index:99;
-   text-align:center;
-   font-size:14px;
-   background-color:#f2f2f3;
- }
- 
- 
  /*a 連結*/
  a{
    text-decoration: none !important;
  }
  
- /*做品說明連結*/
+ /*作品說明連結*/
  button#intro{
    border:none;
    background:none;
@@ -9461,13 +9425,40 @@
  
  /*作品集頁腳*/
  #copyright{
-   opacity:0;
+   margin-top:20px;
+   padding:10px 0;
+   color:rgb(255, 255, 255, 0);
+   text-align:center;
  }
- 
  #copyright > a{
    display:none;
  }
- 
+
+ /*董小蕙版權宣告*/
+ #persofooter{
+   color:#878787;
+   font-size:14px;
+   letter-spacing:1px;
+ }
+
+ /*多國語系旗幟icon*/
+ span.pwg-icon{
+   display:none;
+ }
+ /*多國語系字串*/
+ .pwg-button-text{
+   display:inline-block;
+ }
+ /*作品集主圖*/
+ .jumbotron, .jumbotron > div{
+   padding:0 !important;
+ }
+
+ /*假字串*/
+ #text{
+   display:none;
+ }
+
  /*RWD*/
  @media (min-width: 0px) {
    .title-l{
