@@ -198,6 +198,11 @@
 		padding:40px 0;
 	}
 
+	/*內文*/
+	p{
+		font-size:15px !important;
+	}
+
 	@media only screen and (max-width: 480px) {
 		.LPbox{
 			width:100%;
